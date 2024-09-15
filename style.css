@@ -1,0 +1,129 @@
+body {
+    background-color: beige;
+}
+
+.bx {
+    background-color: black;
+    display: inline-block;
+    width: 380px;
+    margin: 25px;
+}
+
+h1 {
+    position: relative;
+    left: 340px;
+    font-family: cursive;
+    font-style: italic;
+    top: 98px;
+    font-size: xx-large;
+}
+
+#lftbx {
+    color: azure;
+    height: 50vh;
+    position: absolute;
+    border-width: 5px;
+    border-color: red;
+    border-radius: 15px;
+    padding: 20px 10px 20px 0px;
+    left: 310px;
+    top: 160px;
+}
+#lftbx h2{
+    padding-left:40px;
+}
+
+#rgtbxdw img {
+    width: 250px;
+    height: 250px;
+}
+
+#rgtbxup {
+    height: auto;
+    position: absolute;
+    border-radius: 15px;
+    padding: 20px;
+    left: 780px;
+    top: 158px;
+}
+
+#rgtbxup input {
+    border-radius: 50px;
+    height: 24px;
+    width: 350px;
+    padding: 6px 6px 6px 12px;
+}
+
+#rgtbxup button {
+    background-color: rgb(36, 182, 63);
+    border-radius: 6px;
+    font-weight: 400;
+    height: 32px;
+    width: 64px;
+    position: relative;
+    left: 290px;
+    top: 6px;
+    font-family: sans-serif;
+    z-index: 10;
+}
+
+#rgtbxdw {
+    position: absolute;
+    background-color: none;
+    display: inline-block;
+    width: auto;
+    margin: 25px;
+    border-radius: 15px;
+    padding: 20px;
+    right: 340px;
+    top: 260px;
+    rotate: -45deg;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: azure;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(asset/unchecked.png);
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.ckd {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.ckd::before {
+    background-image: url(asset/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: azure;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: red;
+}
